@@ -8,3 +8,4 @@
  
  Refrensi:
  http://pelajarbisu.blogspot.com/2014/02/Program-lampu-lalu-lintas-dengan-cplusplus.html
+ http://sidiq28.blogspot.com/2015/03/cara-memberi-warna-pada-c.html

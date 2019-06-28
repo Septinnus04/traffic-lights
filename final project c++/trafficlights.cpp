@@ -1,15 +1,15 @@
-#include<cstdlib>
-#include<iostream>
-#include<time.h>
-#include <conio.h>
-#include <windows.h>
+#include<cstdlib>// perintah ini berfungsi untuk operasi pembanding dan operaso konversi
+#include<iostream>//perintah ini di gunakan untuk meletakan code dari header file iostream kedalam program
+#include<time.h>//perintah ini digunakan untuk memanggil waktu pada sistem
+#include <conio.h>//perintah ini digunakan untuk membuat teks antarmuka pengguna
+#include <windows.h>//perintah ini digunakan untuk memanggil perintah perintah yang ada pada command prompt
 
-using namespace std;
-void wait ( double seconds )
+using namespace std;//perintah ini digunakan untuk menyajikan perintah atau deklarasi kepada sebuah aplikasi compiler yang menyatakan bahwa kita akan menggunakan beerkas atau class
+void wait ( double seconds )//fungsi timing
 
 {
   clock_t endwait;
-  endwait = clock () + seconds * CLOCKS_PER_SEC ;
+  endwait = clock () + seconds * CLOCKS_PER_SEC ;//pengaturan jam/waktu perdetik
   while (clock() < endwait) {}
 }
 
@@ -25,7 +25,7 @@ void setcolor(unsigned short color) {
     loop:
     
     for(int i=5;i>=0;i--){
-    system("cls");
+    system("cls");//penghapus layar
     setcolor(15);
     cout<<"==========================================="<<endl;
     setcolor(14);
@@ -40,7 +40,7 @@ void setcolor(unsigned short color) {
 	cout<<"\t"<<i;wait(1);
     }
     for(int i=10;i>=0;i--){
-    system("cls");
+    system("cls");//penghapusan layar
     setcolor(15);
     cout<<"==========================================="<<endl;
     setcolor(12);

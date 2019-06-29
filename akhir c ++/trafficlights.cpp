@@ -8,7 +8,7 @@ using namespace std;//perintah ini digunakan untuk menyajikan perintah atau dekl
 void wait ( double seconds )//fungsi timing
 
 {
-  clock_t endwait;
+  clock_t endwait;//memanggil waktu dari sistem
   endwait = clock () + seconds * CLOCKS_PER_SEC ;//pengaturan jam/waktu perdetik
   while (clock() < endwait) {}
 }

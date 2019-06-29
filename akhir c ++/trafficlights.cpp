@@ -22,57 +22,59 @@ void setcolor(unsigned short color) {
 
     int main(int argc, char *argv[])
 {
-    loop:
+    loop://mengulangi beberapa fungsi
     
     for(int i=5;i>=0;i--){
     system("cls");//penghapus layar
-    setcolor(15);
+    setcolor(15);//memberikan warna kuning
     cout<<"==========================================="<<endl;
-    setcolor(14);
+    setcolor(14);//memberikan warna hijau
     cout<<"KUNING (HATI HATI)"<<endl; //menamppilkan kalimat dengan warna standar
-    setcolor(15);
+    setcolor(15);//memberikan warna kuning
     cout<<"==========================================="<<endl;
     setcolor(14); //Mengeset warna text menjadi warna hijau
-    cout<<"lampu akan mera saat lagi"<<endl;
-    setcolor(15);
+    cout<<"lampu akan mera saat lagi"<<endl;//menampilkan hasil pesan (lampu akan merah saat lagi)
+    setcolor(15);//memberikan warna kuning
+
     cout<<"==========================================="<<endl;
-    setcolor(14);
-	cout<<"\t"<<i;wait(1);
+    setcolor(14);//memberikan warna hijau
+	cout<<"\t"<<i;wait(1);//pemberian waktu
     }
     for(int i=10;i>=0;i--){
     system("cls");//penghapusan layar
-    setcolor(15);
+    setcolor(15);//memberikan warna kuning
     cout<<"==========================================="<<endl;
     setcolor(12);
-    cout<<"MERAH (STOP)"<<endl;
-    setcolor(15);
+    cout<<"MERAH (STOP)"<<endl;//menampilkan hasil merah dengan pesan (STOP)
+    setcolor(15);//memberikan warna kuning 
     cout<<"==========================================="<<endl;
     setcolor(12); //Mengeset warna text menjadi warna hijau
     cout<<"lampu akan hijau saat lagi"<<endl;
-    setcolor(15);
+    setcolor(15);//memberikan warna kuning
     cout<<"==========================================="<<endl;
     setcolor(12); //Mengeset warna text menjadi warna Merah
-    cout<<"\t"<<i;wait(2);
+    cout<<"\t"<<i;wait(2);//menunggu selama 2 detik
     }
     for(int i=10;i>=0;i--){
-    system("cls");
-    setcolor(15);
+    system("cls");//membersihkan layar pada program yang akan 
+    dijalankan sehingga program dapat menentukan saat untuk menghapus data yang telah dijalankan tanpa menutup program
+    setcolor(15);//memberikan warna kuning 
     cout<<"==========================================="<<endl;
     setcolor(10);
     cout<<"HIJAU (JALAN)"<<endl;
-    setcolor(15);
+    setcolor(15);//memberikan warna kuning
     cout<<"==========================================="<<endl;
     setcolor(10); 
     cout<<"lampu akan kuning saat lagi"<<endl;
-    setcolor(15);
+    setcolor(15);//memberiman warna kuning
     cout<<"==========================================="<<endl;
     setcolor(10);
-    cout<<"\t"<<i;wait(2);
+    cout<<"\t"<<i;wait(2);//pemberian waktu
 	}
-	cout << "Finish" << endl;        
+	cout << "Finish" << endl;//menampilkan hasil       
 
-    goto loop;
-    system("PAUSE");
-    getch();
-    return EXIT_SUCCESS;
+    goto loop;//mengatur arah
+    system("PAUSE");//menahan agar tidak cepat hilang
+    getch();//membaca inputan
+    return EXIT_SUCCESS;//menghentikan beberapa fungsi
     }
